@@ -1,0 +1,97 @@
+
+InitCondFile                          ./ic_r01
+ICFormat                              3
+
+OutputDir                             ./output/
+SnapshotFileBase                      snap
+SnapFormat                            3
+NumFilesPerSnapshot                   1
+NumFilesWrittenInParallel             1
+
+ResubmitOn                            0
+ResubmitCommand                       my-scriptfile
+OutputListFilename                    ol
+OutputListOn                          0
+
+CoolingOn                             0
+StarformationOn                       0
+
+Omega0                                0.0
+OmegaBaryon                           0.0
+OmegaLambda                           0.0
+HubbleParam                           1.0
+
+BoxSize                               1
+PeriodicBoundariesOn                  0
+ComovingIntegrationOn                 0
+
+MaxMemSize                            3500
+
+TimeOfFirstSnapshot                   0.0
+CpuTimeBetRestartFile                 9000
+TimeLimitCPU                          90000
+
+TimeBetStatistics                     0.005
+TimeBegin                             0.0
+TimeMax                               0.1
+TimeBetSnapshot                       0.001
+
+UnitVelocity_in_cm_per_s              1e5
+UnitLength_in_cm                      3.085678e18
+UnitMass_in_g                         1.989e33
+GravityConstantInternal               0.0
+
+ErrTolIntAccuracy                     0.1
+ErrTolTheta                           0.1
+ErrTolForceAcc                        0.1
+
+MaxSizeTimestep                       0.0001
+MinSizeTimestep                       1e-5
+CourantFac                            0.3
+
+LimitUBelowThisDensity                0.0
+LimitUBelowCertainDensityToThisValue  0.0
+DesNumNgb                             64
+MaxNumNgbDeviation                    2
+
+MultipleDomains                       2
+TopNodeFactor                         10
+ActivePartFracForNewDomainDecomp      0.1
+
+TypeOfTimestepCriterion               0
+TypeOfOpeningCriterion                1
+GasSoftFactor                         0.01
+
+SofteningComovingType0                0.0001
+SofteningComovingType1                0.0001
+SofteningComovingType2                0.0001
+SofteningComovingType3                0.0001
+SofteningComovingType4                0.0001
+SofteningComovingType5                0.0001
+
+SofteningMaxPhysType0                 0.0001
+SofteningMaxPhysType1                 0.0001
+SofteningMaxPhysType2                 0.0001
+SofteningMaxPhysType3                 0.0001
+SofteningMaxPhysType4                 0.0001
+SofteningMaxPhysType5                 0.0001
+
+SofteningTypeOfPartType0              0
+SofteningTypeOfPartType1              0
+SofteningTypeOfPartType2              0
+SofteningTypeOfPartType3              0
+SofteningTypeOfPartType4              0
+SofteningTypeOfPartType5              0
+
+InitGasTemp                           10.0
+MinGasTemp                            0.0
+MinEgySpec                            0.0
+MinimumDensityOnStartUp               0.0
+
+CellShapingSpeed                      0.5
+
+MinimumComovingHydroSoftening         0.001
+AdaptiveHydroSofteningSpacing         1.2
+
+CellShapingFactor                     0.005
+
